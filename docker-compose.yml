@@ -1,40 +1,14 @@
-
-#php_upstream:
-#  build: ./server
-##  container_name: main-app
-##  user: www-data
-##  volumes_from:
-##    - unison
-#  volumes:
-#    - "~/.composer:/root/.composer"
-#    - "./app:/var/projects/symfony/app"
-#  links:
-#    - memcached
-#    - mysql-server
-#
-#  environment:
-#    HOST_IP: 192.168.99.1
-##    APACHE_DOC_ROOT: /unison
-#  working_dir: /var/projects/symfony/app
-#  tty: true
-
 phpfpm:
   build: ./php-fpm
   volumes:
     - "~/.composer:/root/.composer"
     - "./app:/var/projects/symfony/app:rw"
-#    - "./php-fpm/logs:/var/log/php-fpm/"
-#    - "./php-fpm/symfony/docker.conf:/usr/local/etc/php-fpm.d/docker.conf"
   working_dir: /var/projects/symfony/app
   tty: true
   links:
     - memcached
     - mysql-server
   command: /command.sh
-  ports:
-    - "9001:9001"
-#  environment:
-#    XDEBUG_CONFIG: remote_host={{192.168.6.21}}
 
 server:
   build: ./server
@@ -48,25 +22,13 @@ server:
   ports:
     - "8080:80"
 
-#unison:
-#  image: leighmcculloch/unison
-#  ports:
-#    - "5000:5000"
-
-#mysql-data:
-#  image: tianon/true
-#  volumes:
-#    - /var/lib/mysql
-
 mysql-server:
   image: mysql:5.6
   volumes:
     - "/var/lib/mysql"
 
-#  volumes_from:
-#    - "mysql-data"
   environment:
-      MYSQL_ROOT_PASSWORD: 42
+    MYSQL_ROOT_PASSWORD: 42
 
 memcached:
   image: memcached
