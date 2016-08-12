@@ -5,6 +5,7 @@ MAINTAINER Andrew Semikov <andrew.semikov@gmail.com>
 RUN apt-get update -y && \
 	apt-get install -y --no-install-recommends \
 	curl \
+	unzip \
 	vim \
 	git
 
