@@ -22,7 +22,7 @@ phpfpm:
   build: ./php-fpm
   volumes:
     - "~/.composer:/root/.composer"
-    - "./app:/var/projects/symfony/app"
+    - "./app:/var/projects/symfony/app:rw"
 #    - "./php-fpm/logs:/var/log/php-fpm/"
 #    - "./php-fpm/symfony/docker.conf:/usr/local/etc/php-fpm.d/docker.conf"
   working_dir: /var/projects/symfony/app
