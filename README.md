@@ -15,3 +15,7 @@ Open your `/etc/hosts` file and add docker server ip
 ```
 
 Open dev page http://symfony.dev:8080/app_dev.php/
+
+## Xdebug in PHP Storm
+
+Add `9002` port and `docker` as IDE key. Add server as `symfony.dev`.
