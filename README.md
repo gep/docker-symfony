@@ -23,7 +23,7 @@ or
 
 `ifconfig`
 
-Open dev page `http://symfony.dev:8080/app_dev.php/`
+Open dev page http://symfony.dev:8080/app_dev.php/
 
 ## Xdebug in PHP Storm
 
