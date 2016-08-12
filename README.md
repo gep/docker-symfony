@@ -17,11 +17,13 @@ Download the repo then run
 
 Find out your server service IP:
 
-```
-docker exec dockersymfony_server_1 ip addr
-```
+`docker exec dockersymfony_server_1 ip addr`
 
-Open dev page `http://<server ip>:8080/app_dev.php/`
+or
+
+`ifconfig`
+
+Open dev page `http://symfony.dev:8080/app_dev.php/`
 
 ## Xdebug in PHP Storm
 
