@@ -1,7 +1,7 @@
 # docker-symfony
 This is docker symfony project with mysql database and xdebug
 
-## Feasibilities
+## Features
 
 - PHP 7 fpm & cli
 - Xdebug
