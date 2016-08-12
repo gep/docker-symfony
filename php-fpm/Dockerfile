@@ -34,6 +34,3 @@ RUN chmod a+x /usr/local/bin/symfony
 
 ADD command.sh /command.sh
 RUN chmod a+x /command.sh
-
-VOLUME ["/var/projects/symfony/app"]
-
