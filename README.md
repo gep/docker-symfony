@@ -15,14 +15,13 @@ Download the repo then run
 
 ` docker-compose up -d `
 
-Open your `/etc/hosts` file and add docker server ip
+Find out your server service IP:
+
 ```
-...
-172.17.0.1 symfony.dev
-...
+docker exec dockersymfony_server_1 ip addr
 ```
 
-Open dev page http://symfony.dev:8080/app_dev.php/
+Open dev page http://<server ip>:8080/app_dev.php/
 
 ## Xdebug in PHP Storm
 
