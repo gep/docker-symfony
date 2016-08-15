@@ -23,7 +23,7 @@ or
 
 `ifconfig`
 
-Set your own domain in _/etc/hosts_, for example `symfony.dev [ip address]`
+Set your own domain in _/etc/hosts_, for example `[ip address] symfony.dev`
 
 Open dev page http://symfony.dev:8080/app_dev.php/
 
