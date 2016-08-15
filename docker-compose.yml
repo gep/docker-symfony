@@ -13,7 +13,7 @@ phpfpm:
 server:
   build: ./server
   volumes:
-     - "./server/nginx/host.conf:/etc/nginx/conf.d/host.conf"
+     - "./server/nginx/:/etc/nginx/conf.d/"
      - "./server/logs:/var/log/nginx/symfony/"
   links:
     - phpfpm:fpmmain
