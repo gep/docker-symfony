@@ -23,7 +23,11 @@ or
 
 `ifconfig`
 
+Set your own domain in _/etc/hosts_, for example symfony.dev _ip address_
+
 Open dev page http://symfony.dev:8080/app_dev.php/
+
+Here we are!
 
 ## Xdebug in PHP Storm
 
